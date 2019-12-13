@@ -32,13 +32,14 @@ const App = () => {
 
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {apiReq.map((x) =>{
+      {apiReq.map((x) =>(
         <Appcontent
+        key = {x}
         name = {x.name}
         gender = {x.gender}
-        byear = {x.birth_year}
+        birth_year = {x.birth_year}
         />
-      })}
+      ))}
       
     </div>
   );

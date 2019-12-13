@@ -1,16 +1,23 @@
 import React from "react";
+import { Card, CardImg, CardTitle } from "reactstrap";
 
-const AppContent = props =>{
-    console.log(props.name);
+const Appcontent = props =>{
+    console.log(props.birth_year);
     return (
-        <div className='star-container' key={props.id}>
+        <div className='star-container' key={props.x}>
             
-            <div className="hero">
-                <h1>{props.name}</h1>
+            <Card>
+                <CardTitle>
+                    <h1>{props.name}</h1>
+                </CardTitle>
                 <p>{props.gender}</p>
+                <p>{props.birth_year}</p>
+            </Card>
+            <div className="hero">
+                
             </div>
-        </div>
+        </div>        
     );
 }
 
-export default AppContent;
+export default Appcontent;
